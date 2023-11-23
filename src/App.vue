@@ -1,9 +1,11 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
+import NavTop from './components/NavTop.vue'
+import Footer from './components/Footer.vue'
 </script>
 
 <template>
-   <h1 class="text-3xl font-bold text-blue-500">Tjjjexto azul</h1>
+   <NavTop></NavTop>
+   <Footer></Footer>
 </template>
 
 <style scoped>
