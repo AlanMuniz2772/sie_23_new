@@ -1,22 +1,5 @@
 <template>
-    <swiper :slidesPerView="swiperSlidesPerView" :spaceBetween="1" :navigation="{ enabled: bNavigation, }"
-        autoplay="autoplay" :modules="modules" :scrollbar="true" :loop="true">
-        <swiper-slide>
-            <!-- <a href="sie.html"> -->
-            <img src="../assets/images/carousel/E_J22.jpg" title="Ir a información SIE">
-            <!-- </a> -->
-        </swiper-slide>
-        <swiper-slide>
-            <!-- <a href="statics.html"> -->
-            <img src="../assets/images/carousel/estadistica_2.jpg" title="Ir a Estadísticas">
-            <!-- </a> -->
-        </swiper-slide>
-        <swiper-slide>
-            <!-- <a href="statics.html"> -->
-            <img src="../assets/images/carousel/contacto.jpg" title="Ir a Estadísticas">
-            <!-- </a> -->
-        </swiper-slide>
-    </swiper>
+    <CarruselTop :imagenes="aImgInicio"></CarruselTop>
     <div class="container mx-auto px-4 mb-12">
         <div class="text-center">
             <h1 class="text-2xl text-blue1 my-4 font-bold">PORTAL ESTADISTICA</h1>
@@ -40,20 +23,15 @@
                 </p>
             </div>
         </div>
-    </div><!-- /.container -->
+    </div>
 </template>
 
 <script setup>
-import { computed, onBeforeUnmount, onMounted, ref } from 'vue';
-import { Autoplay, Navigation, Pagination } from 'swiper';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import { Swiper, SwiperSlide } from 'swiper/vue';
-
-const modules = [Autoplay, Pagination, Navigation];
-const swiperSlidesPerView = ref(1); // Valor predeterminado
-const bNavigation = ref(true); // Valor predeterminado
+import img1 from '../assets/images/carousel/E_J22.jpg'
+import img2 from '../assets/images/carousel/estadistica_2.jpg'
+import img3 from '../assets/images/carousel/contacto.jpg'
+import CarruselTop from '../components/CarruselTop.vue';
+const aImgInicio = [img1, img2, img3]
 </script>
 
 <style scoped>

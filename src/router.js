@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 //Importar las diferentes vistas
 import Inicio from "./views/Inicio.vue";
+import SomosUadec from "./views/SomosUadec.vue";
 
 //configuracion de rutas
 const routes = [
@@ -9,6 +10,12 @@ const routes = [
 		name: "Inicio",
 		alias: "/",
 		component: Inicio,
+	},
+	{
+		path: "/somos-uadec",
+		name: "SomosUadec",
+		alias: "/",
+		component: SomosUadec,
 	},
 ];
 
