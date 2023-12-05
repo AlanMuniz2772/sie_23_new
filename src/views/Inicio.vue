@@ -1,6 +1,14 @@
+<script setup>
+import img1 from '../assets/images/carousel/E_J22.jpg';
+import img3 from '../assets/images/carousel/contacto.jpg';
+import img2 from '../assets/images/carousel/estadistica_2.jpg';
+import CarruselTop from '../components/CarruselTop.vue';
+const aImgInicio = [img1, img2, img3]
+</script>
+
 <template>
-    <CarruselTop :imagenes="aImgInicio"></CarruselTop>
-    <div class="container mx-auto px-4 mb-12">
+    <CarruselTop class="mt-[-4.3%]" :imagenes="aImgInicio"></CarruselTop>
+    <div class="container mx-auto my-24">
         <div class="text-center">
             <h1 class="text-2xl text-blue1 my-4 font-bold">PORTAL ESTADISTICA</h1>
             <h4 class="text-lg text-blue1 my-2">VARIABLES E INDICADORES</h4>
@@ -25,14 +33,6 @@
         </div>
     </div>
 </template>
-
-<script setup>
-import img1 from '../assets/images/carousel/E_J22.jpg'
-import img2 from '../assets/images/carousel/estadistica_2.jpg'
-import img3 from '../assets/images/carousel/contacto.jpg'
-import CarruselTop from '../components/CarruselTop.vue';
-const aImgInicio = [img1, img2, img3]
-</script>
 
 <style scoped>
 p span {

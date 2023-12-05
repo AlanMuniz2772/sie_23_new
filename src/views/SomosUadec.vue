@@ -1,31 +1,55 @@
+<script setup>
+
+import img1 from '../assets/images/carousel/uadec_1.jpg'
+import img2 from '../assets/images/carousel/uadec_2.jpg'
+import coahuila from '../assets/images/other/coahuila.jpg'
+import compe from '../assets/images/other/compe.jpg'
+import educacion from '../assets/images/other/educacion.jpg'
+import industria from '../assets/images/other/industria.jpg'
+import infraes from '../assets/images/other/infraes.jpg'
+import necesidad from '../assets/images/other/necesidad.jpg'
+import poblacion from '../assets/images/other/poblacion.jpg'
+import regiones from '../assets/images/other/regiones.jpg'
+import regionesuadec from '../assets/images/other/regionesuadec.jpg'
+import unidadesuadec from '../assets/images/other/unidadesuadec.jpg'
+
+import CarruselTop from '../components/CarruselTop.vue'
+const aImgInicio = [img1, img2]
+</script>
+
 <template>
-    <CarruselTop :imagenes="aImgInicio"></CarruselTop>
-    <div class="container mx-auto px-24 mb-12 grid grid-cols-3 gap-8">
+    <CarruselTop class="mt-[-4.3%]" :imagenes="aImgInicio"></CarruselTop>
+    <div class="container mx-auto my-20 grid grid-cols-3 gap-16">
         <div class="column">
             <img :src=coahuila alt="Coahuila">
-            <h3>El Estado de COAHUILA</h3>
-            <p>
-                Se localiza en el noreste de México y comparte límites al norte con el estado de Texas (EU), al sur con
-                Zacatecas y San Luis Potosí, al este con Nuevo León y al oeste con Durango y Chihuahua.
+            <div class="flex items-start flex-col gap-y-4">
+                <h3>El Estado de COAHUILA</h3>
+                <p>
+                    Se localiza en el noreste de México y comparte límites al norte con el estado de Texas (EU), al sur con
+                    Zacatecas y San Luis Potosí, al este con Nuevo León y al oeste con Durango y Chihuahua.
 
-                Ocupa el 3er. lugar nacional en extensión territorial (151,571 km² ) lo que representa el 7.7% de la
-                superficie nacional.
-            </p>
+                    Ocupa el 3er. lugar nacional en extensión territorial (151,571 km² ) lo que representa el 7.7% de la
+                    superficie nacional.
+                </p>
+            </div>
         </div>
         <div class="column">
             <img :src=regiones alt="regiones">
-            <h3>Regiones del Estado</h3>
-            <ul>
-                <li>
-                    Fonteriza:Acuña, Allende, Guerrero, Jimenez, Morelos, Nava, Piedras Negras, Zaragoza y Villa Unión
-                </li>
-                <li>Centro: Abasolo, Candela, Castaños, Cuatrociénegas, Escobedo, Frontera, Lamadrid, Monclova, Nadadores,
-                    Ocampo,</li>
-                <li>Sacramento, San Buenaventura y Sierra Moajada.</li>
-                <li>Carbonífera: Juárez, Múzquiz, Progreso, Sabinas, San Juan de Sabinas.</li>
-                <li>Laguna: Franciso I., Matamoros, San Pedro, Torreón y Viesca.</li>
-                <li>Sureste: Arteaga, General Cepeda, Parras, Ramos Arizpe y Saltillo</li>
-            </ul>
+            <div class="flex items-start flex-col gap-y-4">
+                <h3>Regiones del Estado</h3>
+                <ul>
+                    <li>
+                        Fonteriza:Acuña, Allende, Guerrero, Jimenez, Morelos, Nava, Piedras Negras, Zaragoza y Villa Unión
+                    </li>
+                    <li>Centro: Abasolo, Candela, Castaños, Cuatrociénegas, Escobedo, Frontera, Lamadrid, Monclova,
+                        Nadadores,
+                        Ocampo,</li>
+                    <li>Sacramento, San Buenaventura y Sierra Moajada.</li>
+                    <li>Carbonífera: Juárez, Múzquiz, Progreso, Sabinas, San Juan de Sabinas.</li>
+                    <li>Laguna: Franciso I., Matamoros, San Pedro, Torreón y Viesca.</li>
+                    <li>Sureste: Arteaga, General Cepeda, Parras, Ramos Arizpe y Saltillo</li>
+                </ul>
+            </div>
         </div>
         <div class="column">
             <img :src=poblacion alt="">
@@ -88,24 +112,6 @@
     </div>
 </template>
 
-<script setup>
-
-import img1 from '../assets/images/carousel/uadec_1.jpg'
-import img2 from '../assets/images/carousel/uadec_2.jpg'
-import coahuila from '../assets/images/other/coahuila.jpg'
-import regiones from '../assets/images/other/regiones.jpg'
-import poblacion from '../assets/images/other/poblacion.jpg'
-import industria from '../assets/images/other/industria.jpg'
-import compe from '../assets/images/other/compe.jpg'
-import educacion from '../assets/images/other/educacion.jpg'
-import regionesuadec from '../assets/images/other/regionesuadec.jpg'
-import unidadesuadec from '../assets/images/other/unidadesuadec.jpg'
-import necesidad from '../assets/images/other/necesidad.jpg'
-import infraes from '../assets/images/other/infraes.jpg'
-
-import CarruselTop from '../components/CarruselTop.vue';
-const aImgInicio = [img1, img2]
-</script>
 
 <style scoped>
 .column {
