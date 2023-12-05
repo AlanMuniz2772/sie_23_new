@@ -45,8 +45,8 @@ const selectedCycle = ref(1);
                 </select>
             </div>
             <div class="my-5">
-                <div v-if="selectedCycle === 1" class="flex flex-col items-center border rounded-lg p-10">
-                    <strong>UNIVERSIDAD AUTÓNOMA DE COAHUILA EN NÚMEROS CICLO 2023-2024 ENE-JUN 2023</strong>
+                <div v-if="selectedCycle === '1'" class="flex flex-col items-center border rounded-lg p-10">
+                    <h3>UNIVERSIDAD AUTÓNOMA DE COAHUILA EN NÚMEROS CICLO 2023-2024 ENE-JUN 2023</h3>
                     <div>
                         <img src="../assets/images/Num23_/01.jpg" alt="">
                         <img src="../assets/images/Num23_/02.jpg" alt="">
@@ -61,8 +61,8 @@ const selectedCycle = ref(1);
                         <img src="../assets/images/Num23_/11.jpg" alt="">
                     </div>
                 </div>
-                <div v-if="selectedCycle === 2" class="flex flex-col items-center border rounded-lg p-10">
-                    <strong>UNIVERSIDAD AUTÓNOMA DE COAHUILA EN NÚMEROS CICLO 2022-2023 AGO-DIC 2022</strong>
+                <div v-else-if="selectedCycle === '2'" class="flex flex-col items-center border rounded-lg p-10">
+                    <h3>UNIVERSIDAD AUTÓNOMA DE COAHUILA EN NÚMEROS CICLO 2022-2023 AGO-DIC 2022</h3>
                     <div>
                         <img src="../assets/images/Num23_/01.jpg" alt="">
                         <img src="../assets/images/Num23_/02.jpg" alt="">
@@ -75,6 +75,100 @@ const selectedCycle = ref(1);
                         <img src="../assets/images/Num23_/09.jpg" alt="">
                         <img src="../assets/images/Num23_/10.jpg" alt="">
                         <img src="../assets/images/Num23_/11.jpg" alt="">
+                    </div>
+                </div>
+                <div v-else-if="selectedCycle === '3'" class="flex flex-col items-center border rounded-lg p-10">
+                    <h3>UNIVERSIDAD AUTÓNOMA DE COAHUILA EN NÚMEROS CICLO 2021-2022 ENE-JUN 2022</h3>
+                    <div>
+                        <img src="../assets/images/other/distribucion16.jpg" alt="">
+                        <div class="row">
+                            <h3>
+                                <font color="#808080">FACULTADES, ESCUELAS, CENTROS E INSTITUTOS DE INVESTIGACION</font>
+                            </h3>
+                            <div class="flex">
+                                <div class="flex col-md-6">
+                                    <div class="row">
+                                        <div class="col-md-9">
+                                            <ul>
+                                                <li><b>
+                                                        <font size="3" color="e36c0a">Eduación superior:</font>
+                                                    </b>&nbsp;&nbsp;<b>
+                                                        <font size="4" color="9bbb59">43</font>
+                                                    </b>&nbsp;&nbsp;<b>
+                                                        <font color="#000000">Facultades y/o escuelas</font>
+                                                    </b></li>
+                                                <p></p>
+                                                <li><b>
+                                                        <font size="3" color="e36c0a">Bachillerato en los sistemas
+                                                            escolarizado y abierto:</font>
+                                                    </b>&nbsp;&nbsp;<b>
+                                                        <font size="4" color="9bbb59">14</font>
+                                                    </b>&nbsp;&nbsp;<b>
+                                                        <font color="#000000">Planteles</font>
+                                                    </b></li>
+                                                <p></p>
+                                                <li><b>
+                                                        <font size="3" color="e36c0a">Centros de Investigación:</font>
+                                                    </b>&nbsp;&nbsp;<b>
+                                                        <font size="4" color="9bbb59">2</font>
+                                                    </b>&nbsp;&nbsp;<b>
+                                                        <font color="#000000">Centros</font>
+                                                    </b></li>
+                                                <p></p>
+                                                <li><b>
+                                                        <font size="3" color="00000">2 Unidades Académicas Independientes
+                                                        </font>
+                                                    </b></li>
+                                                <li><b>
+                                                        <font size="2" color="000000">Centro de Investigaciones
+                                                            Socioeconómicas</font>
+                                                    </b></li>
+                                                <li><b>
+                                                        <font size="2" color="000000">Centro de Estudios e Investigaciones
+                                                            Interdisciplinarias</font>
+                                                    </b></li>
+                                                <p></p>
+                                                <li><b>
+                                                        <font size="3" color="00000">2 Centros de Investigación dependientes
+                                                            de UA</font>
+                                                    </b></li>
+                                                <li><b>
+                                                        <font size="2" color="000000">Centro de Investigaciones Biomédicas
+                                                        </font>
+                                                    </b></li>
+                                                <li><b>
+                                                        <font size="2" color="000000">Centro de Investigación en Matemáticas
+                                                            Aplicadas</font>
+                                                    </b></li>
+
+
+                                            </ul>
+
+                                        </div><!-- /.col -->
+                                        <div class="col-md-1">
+
+                                        </div><!-- /.col -->
+                                    </div>
+                                </div><!-- /.col -->
+
+                                <div class="col-md-6">
+                                    <div class="row">
+                                        <div class="col-md-9">
+                                            <img alt="" src="../assets/images/other/rectoria.jpg" style="width: 50%;">
+                                        </div><!-- /.col -->
+                                        <div class="col-md-1">
+
+
+
+                                        </div><!-- /.col -->
+                                    </div>
+                                </div><!-- /.col -->
+
+
+                            </div><!-- /.col -->
+
+
+                        </div>
                     </div>
                 </div>
             </div>
